@@ -1,0 +1,472 @@
+.w-90 {
+    width: 90%;
+}
+
+.h-1000 {
+    height: 750px;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.m-sm {
+    padding-right: 10px;
+}
+
+.p-sm {
+    margin: 10px;
+}
+.font-judul {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1rem;
+    color: #191919;
+}
+
+.font-saya {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.font-nama {
+  font-family: 'Righteous', cursive;
+}
+
+.font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.color-text {
+  color: rgb(0,189,149);
+}
+
+.shadow-saya {
+  box-shadow: 0 14px 20px rgba(0,189,149,0.3);
+}
+.shadow-icon {
+  box-shadow: 0 10px 15px rgba(0,189,149,0.3);
+  &:hover {
+    box-shadow: none;
+    transition: all .3s;
+  }
+}
+
+.text-shadow {
+  box-shadow: 0 14px 20px rgba(0,189,149,0.3);
+}
+
+.hover {
+  &:hover {
+    background-color: rgb(4, 146, 115);
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+.img-hero {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.border-img {
+  border-bottom: 2px solid rgb(4, 146, 115);
+}
+
+.bg-teal {
+  background-color: rgb(4, 146, 115);
+}
+
+.bg-btn {
+  // background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.icon-color {
+  fill: rgb(199,213,215);
+  // fill: black;
+}
+
+.bg-about {
+  background-image: linear-gradient(to left, rgb(23,28,35), rgb(0, 0, 0));
+}
+
+.bg-project {
+  background-image: linear-gradient(to right, rgb(23,28,35), rgb(0, 0, 0));
+}
+
+.bg-contact {
+  background-image: linear-gradient(to bottom, rgb(23,28,35), rgb(0, 0, 0));
+}
+
+.bg-swiper {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.bg-footer {
+  background-image: linear-gradient(to top, rgb(17, 73, 67), rgb(0, 0, 0));
+}
+
+
+// . hexagon
+.hexagon {
+  width: 50px;
+  height: 35px;
+  background-color: rgb(22,87,80);
+  position: relative;
+  margin: 50px auto;
+  border-radius: 5px;
+  &:hover .icon-color {
+    fill: black;
+    transition: all .2s;
+  }
+}
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+.hexagon:before {
+  bottom: 95%;
+  border-bottom: 13px solid rgb(22,87,80);
+  border-radius: 10px;
+}
+.hexagon:after {
+  top: 95%;
+  width: 0;
+  border-top: 13px solid rgb(22,87,80);
+  border-radius: 10px;
+}
+
+// . Form 
+.singup {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 1.5em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  // width: 250px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  background: transparent;
+  // border-left: 2px solid #000;
+  border-left: 2px solid #047762;
+  border-bottom: 2px solid #047762;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  // color: #000;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  transform: translateX(240px) translateY(-20px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+  transform: translateX(240px) translateY(-20px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: white;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  // border: 2px solid #000;
+  border: 2px solid rgb(22,87,80);
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid rgb(22,87,80);
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+  color: white;
+}
+
+.enter:hover {
+  box-shadow: 0 0 5px rgb(4, 146, 115),
+              0 0 25px rgb(4, 146, 115),
+              0 0 50px rgb(4, 146, 115),
+              0 0 100px rgb(4, 146, 115);
+  color: white;
+}
+
+// + end costom
+// + toggle 
+.switch {
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg,
+              rgb(0,189,149) 20%,
+              rgb(9, 3, 7) 100%);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .switch div {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    position: absolute;
+  }
+  
+  .switch span {
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+  }
+  
+  .switch .line-1 {
+    width: 50%;
+    transform: translate(-100%, -10px);
+    transform-origin: 0 0;
+  }
+  
+  .switch .line-3 {
+    width: 50%;
+    left: auto;
+    right: 0;
+    transform: translate(0, 10px);
+    transform-origin: 100% 0;
+  }
+  
+  input:checked + div span.line-1 {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+  
+  input:checked +  div span.line-3 {
+    transform: translate(-100%, 0) rotate(-45deg);
+  }
+  
+  input:checked + div span.line-2 {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  // + Navbar
+  .navbar {
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    // color: inherit;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    // color: teal;
+    color: #fff;
+    li {
+      &:hover {
+        color: teal;
+        transition: all .2s;
+      }
+      &:active {
+        color: teal;
+      }
+    }
+}
+
+// + Home 
+.home {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 8%;
+  .img {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+// + About 
+.about {
+  top: 15%;
+}
+
+// + Project
+#ject {
+  display: none;
+}
+
+// + css nav untuk js
+.nav-menu {
+    max-height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.nav-blur {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.nav-border {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 600px) {
+  .switch {
+    display: inline-block;
+  }
+  .navbar {
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      border-radius: 0;
+  }
+  .menu {
+      width: 100%;
+      max-height: 0;
+      display: none;
+  }
+
+  .list {
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .navbar button {
+      display: inline-block;
+      align-items: center;
+      cursor: pointer;
+  }
+
+  #pro {
+    display: none;
+  }
+
+  // .desktop {
+  //   display: none;
+  // }
+
+  #ject {
+    display: inline-block;
+  }
+
+  // + hexagon 
+  .hexagon {
+    width: 40px;
+    height: 30px;
+  }
+  .hexagon:before,
+  .hexagon:after {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+
+  // + Form
+  .inputBox input:valid~span,
+  .inputBox input:focus~span {
+    transform: translateX(170px) translateY(-20px);
+  }
+
+  .inputBox1 input:valid~span,
+  .inputBox1 input:focus~span {
+    transform: translateX(170px) translateY(-20px);
+  }
+}

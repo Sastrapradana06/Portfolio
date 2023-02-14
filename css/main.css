@@ -1,0 +1,506 @@
+.w-90 {
+  width: 90%;
+}
+
+.h-1000 {
+  height: 750px;
+}
+
+.ml-2 {
+  margin-left: 20px;
+}
+
+.m-sm {
+  padding-right: 10px;
+}
+
+.p-sm {
+  margin: 10px;
+}
+
+.font-judul {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1rem;
+  color: #191919;
+}
+
+.font-saya {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.font-nama {
+  font-family: 'Righteous', cursive;
+}
+
+.font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.color-text {
+  color: #00bd95;
+}
+
+.shadow-saya {
+  -webkit-box-shadow: 0 14px 20px rgba(0, 189, 149, 0.3);
+          box-shadow: 0 14px 20px rgba(0, 189, 149, 0.3);
+}
+
+.shadow-icon {
+  -webkit-box-shadow: 0 10px 15px rgba(0, 189, 149, 0.3);
+          box-shadow: 0 10px 15px rgba(0, 189, 149, 0.3);
+}
+
+.shadow-icon:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.text-shadow {
+  -webkit-box-shadow: 0 14px 20px rgba(0, 189, 149, 0.3);
+          box-shadow: 0 14px 20px rgba(0, 189, 149, 0.3);
+}
+
+.hover:hover {
+  background-color: #049273;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.img-hero {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.border-img {
+  border-bottom: 2px solid #049273;
+}
+
+.bg-teal {
+  background-color: #049273;
+}
+
+.bg-btn {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.icon-color {
+  fill: #c7d5d7;
+}
+
+.bg-about {
+  background-image: -webkit-gradient(linear, right top, left top, from(#171c23), to(black));
+  background-image: linear-gradient(to left, #171c23, black);
+}
+
+.bg-project {
+  background-image: -webkit-gradient(linear, left top, right top, from(#171c23), to(black));
+  background-image: linear-gradient(to right, #171c23, black);
+}
+
+.bg-contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#171c23), to(black));
+  background-image: linear-gradient(to bottom, #171c23, black);
+}
+
+.bg-swiper {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.bg-footer {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#114943), to(black));
+  background-image: linear-gradient(to top, #114943, black);
+}
+
+.hexagon {
+  width: 50px;
+  height: 35px;
+  background-color: #165750;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.hexagon:hover .icon-color {
+  fill: black;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 95%;
+  border-bottom: 13px solid #165750;
+  border-radius: 10px;
+}
+
+.hexagon:after {
+  top: 95%;
+  width: 0;
+  border-top: 13px solid #165750;
+  border-radius: 10px;
+}
+
+.singup {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 1.5em;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 350px;
+  width: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #047762;
+  border-bottom: 2px solid #047762;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  -webkit-transform: translateX(240px) translateY(-20px);
+          transform: translateX(240px) translateY(-20px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid ~ span,
+.inputBox1 input:focus ~ span {
+  -webkit-transform: translateX(240px) translateY(-20px);
+          transform: translateX(240px) translateY(-20px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: white;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid #165750;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #165750;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+  color: white;
+}
+
+.enter:hover {
+  -webkit-box-shadow: 0 0 5px #049273, 0 0 25px #049273, 0 0 50px #049273, 0 0 100px #049273;
+          box-shadow: 0 0 5px #049273, 0 0 25px #049273, 0 0 50px #049273, 0 0 100px #049273;
+  color: white;
+}
+
+.switch {
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(45deg, #00bd95 20%, #090307 100%);
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
+          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
+  border-radius: 5px;
+  display: none;
+}
+
+.switch input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+}
+
+.switch div {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  position: absolute;
+}
+
+.switch span {
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: width 0.5s, -webkit-transform 0.5s;
+  transition: width 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, width 0.5s;
+  transition: transform 0.5s, width 0.5s, -webkit-transform 0.5s;
+}
+
+.switch .line-1 {
+  width: 50%;
+  -webkit-transform: translate(-100%, -10px);
+          transform: translate(-100%, -10px);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.switch .line-3 {
+  width: 50%;
+  left: auto;
+  right: 0;
+  -webkit-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+input:checked + div span.line-1 {
+  -webkit-transform: translate(0, 0) rotate(-45deg);
+          transform: translate(0, 0) rotate(-45deg);
+}
+
+input:checked + div span.line-3 {
+  -webkit-transform: translate(-100%, 0) rotate(-45deg);
+          transform: translate(-100%, 0) rotate(-45deg);
+}
+
+input:checked + div span.line-2 {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navbar {
+  position: fixed;
+  width: 90%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  color: #fff;
+}
+
+.list li:hover {
+  color: teal;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.list li:active {
+  color: teal;
+}
+
+.home {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 8%;
+}
+
+.home .img {
+  width: 300px;
+  height: 400px;
+}
+
+.about {
+  top: 15%;
+}
+
+#ject {
+  display: none;
+}
+
+.nav-menu {
+  max-height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+.nav-blur {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.nav-border {
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .switch {
+    display: inline-block;
+  }
+  .navbar {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  .menu {
+    width: 100%;
+    max-height: 0;
+    display: none;
+  }
+  .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .navbar button {
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  #pro {
+    display: none;
+  }
+  #ject {
+    display: inline-block;
+  }
+  .hexagon {
+    width: 40px;
+    height: 30px;
+  }
+  .hexagon:before,
+  .hexagon:after {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span {
+    -webkit-transform: translateX(170px) translateY(-20px);
+            transform: translateX(170px) translateY(-20px);
+  }
+  .inputBox1 input:valid ~ span,
+  .inputBox1 input:focus ~ span {
+    -webkit-transform: translateX(170px) translateY(-20px);
+            transform: translateX(170px) translateY(-20px);
+  }
+}
+/*# sourceMappingURL=main.css.map */
